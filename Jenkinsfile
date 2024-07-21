@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Get code from GitHub') {
             steps {
-                git 'https://github.com/AdamRaboch/time-date'
+                git branch: 'main', url: 'https://github.com/AdamRaboch/time-date'
             }
         }
         stage('Run') {
