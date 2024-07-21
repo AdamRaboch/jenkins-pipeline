@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh 'python3 time.py'
+                sh 'python3 time.py > output.txt'
             }
         }
     }
